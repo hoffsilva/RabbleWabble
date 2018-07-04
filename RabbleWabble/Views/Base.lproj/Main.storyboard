@@ -48,6 +48,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mO-Pb-kSp">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="98.5"/>
                                                         <state key="normal" image="ic_circle_x"/>
+                                                        <connections>
+                                                            <action selector="handleIncorrect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A4M-Nu-9JK"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQ4-gx-nwH">
                                                         <rect key="frame" x="0.0" y="98.5" width="80" height="38.5"/>
@@ -63,6 +66,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFb-im-aE4">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="98.5"/>
                                                         <state key="normal" image="ic_circle_check"/>
+                                                        <connections>
+                                                            <action selector="handleCorrect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eSH-qf-25l"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLI-wa-eEN">
                                                         <rect key="frame" x="0.0" y="98.5" width="80" height="38.5"/>
@@ -95,6 +101,11 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="3fX-Qv-J05">
+                    <connections>
+                        <action selector="toggleAnswerLabels:" destination="BYZ-38-t0r" id="2oB-eY-RFt"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
     </scenes>
